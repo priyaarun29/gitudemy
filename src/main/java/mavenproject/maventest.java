@@ -15,10 +15,10 @@ public class maventest {
 		ExtentHtmlReporter reporters=new ExtentHtmlReporter("report.html");
 		ExtentReports reports= new ExtentReports();
 		reports.attachReporter(reporters);
-		ExtentTest test=reports.createTest("whatsup dude");
+		ExtentTest test=reports.createTest("selenium webdriver");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.google.co.in");;
-		driver.findElement(By.name("q")).sendKeys("whatsup dude");
+		driver.findElement(By.name("q")).sendKeys("selenium webdriver");
 		driver.findElement(By.name("q")).submit();
 		test.pass("test passed");
 		reports.flush();
