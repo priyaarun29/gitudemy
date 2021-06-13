@@ -20,7 +20,7 @@ public class maventest {
 		driver.get("https://www.google.co.in");;
 		driver.findElement(By.name("q")).sendKeys("selenium webdriver");
 		driver.findElement(By.name("q")).submit();
-		test.pass("test passed");
+		test.pass("test passed successfully");
 		reports.flush();
 		driver.quit();
 
